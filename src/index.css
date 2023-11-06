@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/21/12/21/anime-wallpaper-7867145_1280.jpg");
+ 
+  height: 100%;
+  
+  background-repeat: no-repeat;
+ background-size: cover;
+ color: rgb(23, 17, 17);
+ 
+}
+.heading {
+  background-image: url("https://cdn.pixabay.com/photo/2023/03/21/12/21/anime-wallpaper-7867145_1280.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fadeIn 1s linear;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.btn{
+  transition: all 0.2s ease;
+  transition: transform 0.5s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+.btn:hover{
+  background-color: rgb(86, 139, 123);
+  transform: translateY(-5px);
+}
+.btn:active{
+  transform: scale(0.96);
+}
+.btn::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+.navbar{
+  background-color: transparent;
+}
+.container h1 {
+  color: aliceblue;
+  text-align: right;
+}
+.container p{
+  color: aliceblue;
+  text-align: right;
+}
+.navbar-brand{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+}
+.nav-link{
+  font-size: 20px;
+}
